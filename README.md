@@ -40,6 +40,7 @@ heroku (for list of common heroku commands)
   + To create a new production version of your app hosted in heroku: heroku create
 
   + To push your application code to heroku (deploy your app): git push heroku master
+  + To run database migration on heroku using command: heroku run rails db:migrate
 
 - Ensure you have committed all your local changes to your git repo prior to pushing to heroku by checking git status
 
