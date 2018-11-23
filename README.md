@@ -1,24 +1,48 @@
-# README
+This website application was created for beginner learning Ruby on Rails Framework.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. PREPARATION FOR HEROKU DEPLOY: 
 
-Things you may want to cover:
+- Remove sqlite3 gem from top of application to within group :development, :test do block
 
-* Ruby version
+- Create a group production:
 
-* System dependencies
+group :production do
+  gem 'pg'
+end
 
-* Configuration
 
-* Database creation
+- Save Gemfile
 
-* Database initialization
+- Run bundle install --without production to update Gemfile.lock file
 
-* How to run the test suite
+- Commit your changes to git repo:
 
-* Services (job queues, cache servers, search engines, etc.)
+git add -A
 
-* Deployment instructions
+git commit -m "Make app production ready"
 
-* ...
+- Install Heroku on your machine:
+
+- Check heroku version:
+
+heroku -v
+
+heroku version
+
+heroku (for list of common heroku commands)
+
+- From your app directory:
+
+  + To login to your heroku account: heroku login
+
+  + To add your SSH key to your heroku account so you don't have to use username and password everytime: heroku keys:add
+
+  + To create a new production version of your app hosted in heroku: heroku create
+
+  + To push your application code to heroku (deploy your app): git push heroku master
+
+- Ensure you have committed all your local changes to your git repo prior to pushing to heroku by checking git status
+
+- To change the name of your application: heroku rename newnameofyourapp (replace newnameofyourapp above with the name you'd like to give your app)
+
+- Your app will then be accessible from the following browser URL: newnameofyourapp.herokuapp.com
