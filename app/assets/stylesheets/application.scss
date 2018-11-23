@@ -1,2 +1,30 @@
+$navbar-default-bg: #FFB900;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #FFB900 !important;
+  border: 1px solid #FFB900;
+  color: #F5F5F5;
+}
+
+.jumbotron {
+  background-color: #FFF8E1 !important;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    color: #212121;
+  }
+}
