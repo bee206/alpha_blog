@@ -76,3 +76,12 @@ $navbar-default-bg: #FFB900;
 .request a:hover {
   text-decoration: none;
 }
+
+.container {
+  width: 100%;
+}
+.container-fluid {
+ padding-right:0;
+ padding-left:0;
+ min-height: 100vh;
+}
