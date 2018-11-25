@@ -3,7 +3,7 @@ class User < ApplicationRecord
   has_many :articles, dependent: :destroy
 
   # Downcase email before save
-  before_save { self.email = email.downcase! }
+  before_save { self.email = email.downcase }
 
   validates :username, presence: true, 
             uniqueness: { case_sensitive: false }, 
