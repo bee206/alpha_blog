@@ -50,3 +50,11 @@
 - Username must be presence and unique
 - Email must be presence and unique
 - Validate email format using regrex
+
+3. ADD PASSWORD TO USER MODEL
+- Using method: has_secure_password in model user.rb
+- Using gem "bcrypt"
+- When add password for user, automatic add password_digest attribute in users table
+- Can refer it with virtual attribute password
+- One way hashed digest of string enter as password
+- Using the resource.authenticate('password') to compare passwords
