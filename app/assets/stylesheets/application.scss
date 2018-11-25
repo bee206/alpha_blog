@@ -67,6 +67,10 @@ $navbar-default-bg: #FFB900;
   }
 }
 // CSS FOR FOOTER
+.navbar-fixed-bottom {
+  position: relative;
+  margin-top: 10px;
+}
 .footer small {
   float: left;
 }
@@ -136,4 +140,26 @@ $navbar-default-bg: #FFB900;
   padding-left: 0;
 }
 
+.paginate {
+  text-align: center;
+  li.active a {
+    background-color: #FAFAFA;
+    border: 1px solid #FFB900;
+    color: #FFB900;
+  }
+
+  li.active a:hover {
+     background-color:  #FFB900;
+     border: 1px solid #FFB900;
+  }
+  li a:hover {
+    background-color:  #FFB900;
+    color: #FAFAFA;
+  }
+}
+
+div.pagination {
+  position: relative;
+
+}
 
