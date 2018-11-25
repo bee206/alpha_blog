@@ -1,12 +1,24 @@
-* {
-  box-sizing: border-box;
+// CSS FOR GLOBAL
+$navbar-default-bg: #FFB900;
+.body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-$navbar-default-bg: #FFB900;
+.container {
+  width: 100%;
+}
+.container-fluid {
+ padding-right:0;
+ padding-left:0;
+ min-height: 100vh;
+}
+
+// IMPORT BOOTSTRAP
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// CSS FOR HEADER
 #logo {
   float: left;
   font-size: 1.7em;
@@ -15,42 +27,46 @@ $navbar-default-bg: #FFB900;
   letter-spacing: -1px;
   font-weight: bold;
 }
+.nav  li  a:hover {
+  color: #FAFAFA !important;
+}
 
-.btn-primary {
+// CSS FOR BUTTON
+.btn-custom {
   background-color: #FAFAFA !important;
   border: 1px solid #FAFAFA;
   color: #FFB900;
 }
-
-.btn-primary:hover {
+.btn-custom:hover {
   background-color: #FFB900!important;
   border: 1px solid #FFB900;
   color: #FAFAFA;
 }
-
-.btn-primary, .btn-primary:hover {
+.btn-custom, .btn-custom:hover {
   margin-top: 80px;
   font-size: 1.3em;
 }
-
+// CSS FOR JUMBOTRON
 .jumbotron {
   background-image: asset-url('jumbotron.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: calc(69% - 69vw);
+  max-width: 1000%;
+  width: auto;
 }
-
 .center {
   text-align: center;
   h2 {
     letter-spacing: -1px;
     font-weight: bold;
     color: #FFB900;
+    padding-top: 40px;
   }
 }
-
-.body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
+// CSS FOR FOOTER
 .footer small {
   float: left;
 }
@@ -58,11 +74,9 @@ $navbar-default-bg: #FFB900;
   float: right;
   list-style-type: none;
 }
-
 .footer small, .footer ul {
   margin-top: 5px;
 }
-
 
 .footer a:hover {
   color: #FAFAFA;
@@ -77,11 +91,35 @@ $navbar-default-bg: #FFB900;
   text-decoration: none;
 }
 
-.container {
-  width: 100%;
+.article-actions {
+  border-top: 1px solid #FFB900;
+  padding-top: 5px;
 }
-.container-fluid {
- padding-right:0;
- padding-left:0;
- min-height: 100vh;
+
+.well {
+  border: 1px solid #FFB900 !important;
+  background-color: #FAFAFA !important;  
 }
+
+.description {
+  margin-top: 0;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  a {
+    color: #FFB900;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.article-body {
+  border-top: 1px solid #FFB900;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
