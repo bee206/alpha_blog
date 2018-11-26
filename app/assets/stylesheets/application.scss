@@ -150,6 +150,13 @@ body {
 .description {
   margin-top: 0;
 }
+#delete a{
+  color: #FFB900;
+}
+#delete a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
 //===================================================================================//
 // CSS FOR USERS INCLUDE SHOW USER, LOGIN, SIGNUP
 .listing {

@@ -58,3 +58,8 @@
 - Can refer it with virtual attribute password
 - One way hashed digest of string enter as password
 - Using the resource.authenticate('password') to compare passwords
+
+4. Add Admin User Functionality
+- Permissions table with roles and associated permissions.
+- A column in users table specifying role, for example if a user is an admin or moderator.
+- A boolean admin column which starts all users as false for that column, unless you set a user to admin.
