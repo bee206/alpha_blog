@@ -1,4 +1,6 @@
-<h1 align="center">Edit your Account</h1>
+<div class="heading">
+  <h1 align="center">Edit your Account</h1>
+</div>
 <%= render 'shared/errors', obj: @user %>
 <div class="row">
   <div class="col-xs-12">
@@ -31,7 +33,7 @@
 
 
       <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
+        <div class="col-sm-10 col-sm-offset-2 button">
           <%= f.submit 'Update your Account',  class:"btn btn-custom btn-lg" %>
         </div>
       </div>

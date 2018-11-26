@@ -151,14 +151,13 @@ body {
   margin-top: 0;
 }
 //===================================================================================//
-// CSS FOR USERS INCLUDE SHOW USER, LOGIN
+// CSS FOR USERS INCLUDE SHOW USER, LOGIN, SIGNUP
 .listing {
   list-style: none;
   padding-left: 0;
 }
-.log-in {
-  position: relative;
-  margin-top: -50px;
+.sign-up .btn-custom {
+  margin-top: 10px;
 }
 //===================================================================================//
 //CSS FOR CANCEL OR REQUEST ACTION IN FORM
@@ -174,8 +173,18 @@ body {
   position: relative;
   margin-top: -20px;
 }
-.alert-success {
+.alert-success, .alert-danger {
   border-radius: initial !important;
 }
 //===================================================================================//
-
+// CSS FOR COMMON ELEMENT
+.heading {
+  padding-bottom: 20px;
+  h1 {
+    font-size: 2vw;
+  }
+}
+.button {
+  position: relative;
+  margin-top: -50px;
+}
