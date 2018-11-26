@@ -1,36 +1,39 @@
 // CSS FOR GLOBAL
 $navbar-default-bg: #FFB900;
-.body {
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.container {
-  width: 100%;
-}
 .container-fluid {
- padding-right:0;
- padding-left:0;
- min-height: 100vh;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-right: 0px;
+  margin-left: 0px;
 }
-
+//===================================================================================//
 // IMPORT BOOTSTRAP
-
 @import "bootstrap-sprockets";
 @import "bootstrap";
-
+//===================================================================================//
 // CSS FOR HEADER
 #logo {
   float: left;
-  font-size: 1.7em;
+  font-size: 2.5vw;
   color: #F5F5F5;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
+  margin-left: 40px;
 }
-.nav  li  a:hover {
+.nav  a:hover {
   color: #FAFAFA !important;
 }
-
+.navbar-default {
+  border-radius: initial !important;
+}
+.dropdown-menu li a:hover {
+  color: #FFB900 !important;
+}
+//===================================================================================//
 // CSS FOR BUTTON
 .btn-custom {
   background-color: #FAFAFA !important;
@@ -44,18 +47,20 @@ $navbar-default-bg: #FFB900;
 }
 .btn-custom, .btn-custom:hover {
   margin-top: 80px;
-  font-size: 1.3em;
+  font-size: 1.5vw;
 }
+//===================================================================================//
 // CSS FOR JUMBOTRON
 .jumbotron {
   background-image: asset-url('jumbotron.png');
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: calc(69% - 69vw);
-  max-width: 1000%;
-  width: auto;
+  background-size: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: -36px;
+  border: none;
+  border-radius: initial !important;
+  height: 100%;
 }
 .center {
   text-align: center;
@@ -63,83 +68,35 @@ $navbar-default-bg: #FFB900;
     letter-spacing: -1px;
     font-weight: bold;
     color: #FFB900;
-    padding-top: 40px;
+    padding-top: 45px;
+    font-size: 2vw;
   }
 }
+//===================================================================================//
 // CSS FOR FOOTER
-.navbar-fixed-bottom {
-  position: relative;
-  margin-top: 10px;
+.footer {
+  height: 50px;
 }
 .footer small {
   float: left;
+  margin-left: 40px;
+  margin-top: 5px;
 }
 .footer ul {
   float: right;
+  margin-right: 40px;
+  margin-top: 5px;
   list-style-type: none;
 }
-.footer small, .footer ul {
+.footer ul {
   margin-top: 5px;
 }
-
 .footer a:hover {
   color: #FAFAFA;
   text-decoration: none;
 }
-
-.request a{
-  color: #FFB900;
-}
-
-.request a:hover {
-  text-decoration: none;
-}
-
-.article-actions {
-  border-top: 1px solid #FFB900;
-  padding-top: 5px;
-}
-
-.well {
-  border: 1px solid #FFB900 !important;
-  background-color: #FAFAFA !important;  
-}
-
-.description {
-  margin-top: 0;
-}
-
-.article-title {
-  font-weight: bold;
-  font-size: 1.5em;
-  a {
-    color: #FFB900;
-  }
-  a:hover {
-    text-decoration: none;
-  }
-}
-
-.article-body {
-  border-top: 1px solid #FFB900;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.dropdown-menu li a:hover {
-  color: #FFB900 !important;
-}
-
-.article-meta-details {
-  border-top: 1px solid #FFB900;
-  margin-top: 15px;
-}
-
-.listing {
-  list-style: none;
-  padding-left: 0;
-}
-
+//===================================================================================//
+//CSS FOR PAGINATION
 .paginate {
   text-align: center;
   li.active a {
@@ -157,9 +114,68 @@ $navbar-default-bg: #FFB900;
     color: #FAFAFA;
   }
 }
-
-div.pagination {
+.paginate-bottom {
   position: relative;
-
+  margin-bottom: 40px !important;
 }
+//===================================================================================//
+// CSS FOR SHOW ARTICLE
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  a {
+    color: #FFB900;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+.article-body {
+  border-top: 1px solid #FFB900;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.well {
+  border: 1px solid #FFB900 !important;
+  background-color: #FAFAFA !important;  
+}
+.article-meta-details {
+  border-top: 1px solid #FFB900;
+  margin-top: 15px;
+}
+.article-actions {
+  border-top: 1px solid #FFB900;
+  padding-top: 5px;
+}
+.description {
+  margin-top: 0;
+}
+//===================================================================================//
+// CSS FOR USERS INCLUDE SHOW USER, LOGIN
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+.log-in {
+  position: relative;
+  margin-top: -50px;
+}
+//===================================================================================//
+//CSS FOR CANCEL OR REQUEST ACTION IN FORM
+.request a{
+  color: #FFB900;
+}
+.request a:hover {
+  text-decoration: none;
+}
+//===================================================================================//
+//CSS FOR SHOW MESSAGE
+.col-xs-12 {
+  position: relative;
+  margin-top: -20px;
+}
+.alert-success {
+  border-radius: initial !important;
+}
+//===================================================================================//
 
